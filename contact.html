@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Contact</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
         body {
@@ -16,7 +16,10 @@
         }
 
         .container {
+            display: flex;
+            flex-direction: column;
             max-width: 800px;
+            height: 400px;
             margin: 20px auto;
             margin-top: 70px;
             margin-bottom: 0px;
@@ -24,9 +27,24 @@
             background-color: #fff;
         }
 
+        .follow-text {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .follow-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+        }
+
         h1, h2 {
             color: #000000;
-            margin-top: 10px;
+            margin-top: 0px;
             margin-bottom: 20px;
         }
 
@@ -44,6 +62,8 @@
         }
 
         p {
+            font-size: 18px;
+            text-align: center;
             margin-bottom: 16px;
         }
 
@@ -77,18 +97,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Big Cube (“we”, “us”, “our”) make use of third-party SDKs and these services may collect your personal information and data when you (“user”, “player”) use our mobile applications and websites (“services”).</p>
+        <h1>Contact</h1>
+        <p>If you have any questions or suggestions contact us at <a href="mailto:infobigcubestudio@gmail.com">infobigcubestudio@gmail.com</a></p>
+        <div class="follow-text">Follow Us</div>
+        <div class="follow-buttons">
+            <a href="https://www.instagram.com/jamolbigcube/"><img src="images/Instagram.png" width="40"></a>
+            <a href="https://www.youtube.com/@jamolbigcube"><img src="images/Youtube.png" width="40"></a>
+            <a href="https://www.tiktok.com/@jamolbigcube"><img src="images/TikTok.png" width="40"></a>
+        </div>
 
+
+        <!--
         <h3>Types of Information and Methods of Collecting</h3>
         <p>Personal Information</p>
         <p>Our mobile applications make use of third party SDKs that serve to provide us and the user with advertisement, and analytics of user/player behavior. These third party services may collect and use various personal information including, but not limited to, device identifiers, advertisement identifiers.</p>
         <p>Non-Personal Information</p>
         <p>The same third party services as mentioned above may also collect and use non-personal information related to the user such as device type, OS, screen resolution, language and geolocation.</p>
-
-        <h3>Third Party Privacy Policies</h3>
-        <p>These are the privacy policies of the third party SDKs that we use:</p>
-        <p>Unity<br><a href="https://unity3d.com/legal/privacy-policy">https://unity3d.com/legal/privacy-policy</a></p>
+        -->
     </div>
 </body>
 </html>
