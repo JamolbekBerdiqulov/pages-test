@@ -66,6 +66,17 @@
             flex-wrap: wrap;
         }
 
+        .download-buttons a {
+            display: inline-flex; /* Changed to inline-flex */
+            width: fit-content; /* Added to ensure link wraps tightly around image */
+            line-height: 0; /* Added to remove extra space below image */
+        }
+
+        .download-buttons a img {
+            height: 60px;
+            width: auto;
+        }
+
         .screenshots {
             display: flex;
             justify-content: center;
@@ -103,10 +114,6 @@
             .download-buttons {
                 gap: 1rem;
             }
-            .download-button {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
-            }
             .screenshots {
                 gap: 1rem;
             }
@@ -127,12 +134,8 @@
             }
             .download-buttons {
                 flex-direction: column;
+                align-items: center; /* Added to center buttons */
                 gap: 1rem;
-            }
-            .download-button {
-                width: 100%;
-                padding: 0.75rem 1rem;
-                font-size: 0.9rem;
             }
             .screenshots {
                 gap: 0.8rem;
@@ -155,8 +158,12 @@
         <h1>Magic Cubes</h1>
         <p>Solve different cube puzzles on your phone, anytime and anywhere</p>
         <div class="download-buttons">
-            <a href="https://apps.apple.com/us/app/magic-cube-collection/id1673372616"><img src="images/appstore.svg" height="60"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.bigcube.magiccubes"><img src="images/playstore.svg" height="60"></a>
+            <a href="https://apps.apple.com/us/app/magic-cube-collection/id1673372616">
+                <img src="images/appstore.svg">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.bigcube.magiccubes">
+                <img src="images/playstore.svg">
+            </a>
         </div>
         <div class="screenshots">
             <img src="images/Sc1.png" alt="Screenshot 1" class="screenshot-img">
